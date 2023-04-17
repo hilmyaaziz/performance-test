@@ -2,6 +2,7 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 export let options = {
   stages: [
+    // stress test scenario
     { duration: '1m', target: 100 },
     { duration: '3m', target: 100 },
     { duration: '1m', target: 200 },

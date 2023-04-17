@@ -2,6 +2,7 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 export let options = {
   stages: [
+    // spike test scenario
     { duration: '10s', target: 100 },
     { duration: '2m', target: 100 },
     { duration: '10s', target: 1000 },
